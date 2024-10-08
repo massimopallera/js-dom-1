@@ -10,4 +10,13 @@ const closeStr = 'Spegni'
 lamp.src = close
 btn.innerHTML = openStr
 
+btn.addEventListener('click', () => {
 
+    if (btn.innerHTML === openStr){
+        lamp.src = open
+        btn.innerHTML = closeStr
+    } else {
+        lamp.src = close
+        btn.innerHTML = openStr
+    }        
+})
